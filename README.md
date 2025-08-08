@@ -4,6 +4,7 @@ This repository includes papers and codes about Sparse Attention, Long-Term Memo
 # Papers
 |Method|Paper|Code| Description |
 |-|-|-|-|
+|MemAgent|[https://arxiv.org/pdf/2507.02259]|[https://github.com/BytedTsinghua-SIA/MemAgent]||
 |InfLLM v2|[https://zhuanlan.zhihu.com/p/1936526523361375905]|[]|改进了 相关性score的计算方法，将K根据seq维度分成多个更小的语义 kernel ，相当于更小的滑窗。用mean pooling 代表 语义kernal，是parameter-free的操作，可以通过优化 token 级别的key vector 来间接优化语义kernal的表示|
 |Gemma3|||global only 为普通的full-attention模型，1：1 sw=4096为1个global attention后夹一个local attention（4096 窗口长度），从图中显示主要节约了kv cache部分的显存|
 |Qwen2.5 1-M|||Dual Chunk Attention : 问题：过长的token在没有经过训练的position后效果变差，The DCA method addresses this issue by dividing the entire sequence into multiple chunks and remapping the relative positions into smaller numbers, 确保任意两个标记之间的距离不超过预训练长度 + 稀疏注意力|
