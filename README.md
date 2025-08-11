@@ -17,10 +17,9 @@ This repository includes papers and codes about Sparse Attention, Long-Term Memo
 
 # Benchmarks
 
-|Name|Url|
-|-|-|
-|InfiniteBench|	https://github.com/OpenBMB/InfiniteBench/blob/main/README_ZH.md|
-|∞-Bench	||
-|LongBench	||
-|FinLongEval|	https://github.com/valuesimplex/FinLongEval|
-|RULER|	https://arxiv.org/abs/2404.06654|
+|Name|paper|code|description|
+|-|-|-|-|
+|InfiniteBench|	https://github.com/OpenBMB/InfiniteBench/blob/main/README_ZH.md||InfiniteBench 测试数据的平均上下文长度为195k，InfiniteBench 评测集包含12个任务，包括中英双语，涵盖了检索、数学、代码、问答、和摘要等5个领域|
+|LongCite|[https://arxiv.org/abs/2409.02897]|[https://github.com/THUDM/LongCite/tree/main]|以句子粒度在每个句子前加索引[x],根据问题找到引用|
+|FinLongEval|	https://github.com/valuesimplex/FinLongEval||面向金融场景的长文档评测集，8 大类金融长文档和 12 大类问题，共计 43 篇金融长文档和 347 道问题（|
+|RULER|	https://arxiv.org/abs/2404.06654|https://github.com/NVIDIA/RULER|综合性的评估benchmark，包含13个任务，4个分类（Retrieval，Question Answering，Multi-hop Tracing，Question Answering）|
